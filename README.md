@@ -592,3 +592,53 @@ It is obvious from perusing the five basic assumptions previously stated that fa
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#603cba">
 <meta name="theme-color" content="#ffffff">
+<br/> This is a system-generated message to inform you that your email could not
+be delivered to one or more recipients. Details of the email and the error are as follows:
+
+
+<kristina@farellispizza.com>: Host or domain name not found. Name service error
+   for name=farellispizza.com type=A: Host not found
+Reporting-MTA: dns; pv50p00im-zteg10021401.me.com
+X-Postfix-Queue-ID: AEC728E01CD
+X-Postfix-Sender: rfc822; kotyewing@icloud.com
+Arrival-Date: Thu, 10 Aug 2023 21:30:20 +0000 (UTC)
+
+Final-Recipient: rfc822; ********@*****************
+Original-Recipient: rfc822;kristina@farellispizza.com
+Action: failed
+Status: 5.4.4
+Diagnostic-Code: X-Postfix; Host or domain name not found. Name service error
+   for name=farellispizza.com type=A: Host not found
+Return-Path: <kotyewing@icloud.com>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=icloud.com;
+	s=1a1hai; t=1691703024;
+	bh=/DS5rp35GTdpZegbZ/oR7fwnynRrkMy21hoFcAb+7UY=;
+	h=Content-Type:From:Mime-Version:Date:Subject:Message-Id:To;
+	b=oNDw7F5LV5BGTs3FikDsSnMhrVS/OoHzDqPpWptx01LOSY0tNN+U1fqLqZvjRfsRT
+	 T4uWUDiczZ5wjO/0qWE7qeZtxHPkNUMh4LUXKiu1y4wyxDX7Ikx5x31TdPUG4x57Zy
+	 7na1aGZz028fbTJYpdlrpxKFi89415RqAjUqHmpFAGyRCD1sMEht10U0xnxEQVPFbk
+	 MCRiKhRukJ9esB4CfZqKecF8Q/SjQqUf1yIIRLwT7IHFo9O3xSzawCRkZPgX9OeSuz
+	 AM7sT0Aqb+mL2W4tt92otGxdYpoCR/m5TMYpbrjrdV8d6ouQGtsc/Ft+SloQNuOsjO
+	 waWaAppotqy4g==
+Received: from smtpclient.apple (pv50p00im-dlb-asmtp-mailmevip.me.com [17.56.9.10])
+	by pv50p00im-zteg10021401.me.com (Postfix) with ESMTPSA id AEC728E01CD
+	for <kristina@farellispizza.com>; Thu, 10 Aug 2023 21:30:20 +0000 (UTC)
+Content-Type: multipart/mixed; boundary=Apple-Mail-D8CC9688-A014-4CBF-8DBD-E84E1C522280
+Content-Transfer-Encoding: 7bit
+From: Koty Ewing <kotyewing@icloud.com>
+Mime-Version: 1.0 (1.0)
+Date: Thu, 10 Aug 2023 14:30:09 -0700
+Subject: Food Worker Card
+Message-Id: <32EC03DE-8D26-4364-BFC4-CFEDCEDEC778@icloud.com>
+To: kristina@farellispizza.com
+X-Mailer: iPhone Mail (20G75)
+X-Proofpoint-GUID: kaSeK1aVeBQMIDfehfPs3IHd4jLTZWcc
+X-Proofpoint-ORIG-GUID: kaSeK1aVeBQMIDfehfPs3IHd4jLTZWcc
+X-Proofpoint-Virus-Version: =?UTF-8?Q?vendor=3Dfsecure_engine=3D1.1.170-22c6f66c430a71ce266a39bfe25bc?=
+=?UTF-8?Q?2903e8d5c8f:6.0.517,18.0.883,17.11.64.514.0000000_definitions?=
+=?UTF-8?Q?=3D2022-06-21=5F08:2022-06-21=5F01,2022-06-21=5F08,2022-02-23?=
+=?UTF-8?Q?=5F01_signatures=3D0?=
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 adultscore=0 spamscore=0 clxscore=1011
+bulkscore=0 suspectscore=0 malwarescore=0 mlxlogscore=424 phishscore=0
+mlxscore=0 classifier=spam adjust=0 reason=mlx scancount=1
+engine=8.12.0-2212070000 definitions=main-2308100185
