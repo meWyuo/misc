@@ -642,3 +642,17 @@ X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 adultscore=0 spam
 bulkscore=0 suspectscore=0 malwarescore=0 mlxlogscore=424 phishscore=0
 mlxscore=0 classifier=spam adjust=0 reason=mlx scancount=1
 engine=8.12.0-2212070000 definitions=main-2308100185
+<br/>
+Hi Koty Ewing
+
+Welcome to TipHaus!
+
+You have been invited to use the TipHaus Employee App.
+
+Click the button below to register your account.
+
+Register Account
+Regards, 
+The TipHaus Team
+
+If you’re having trouble clicking the "Register Account" button, copy and paste the URL below into your web browser: https://setup.tiphaus.com/auth/employee/register/457605?type=employee&signature=d91f88c26b75e1bbc4912d484e10c3b5c594285a692139afc9c399e092ef0a69
