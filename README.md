@@ -656,3 +656,28 @@ Regards,
 The TipHaus Team
 
 If you’re having trouble clicking the "Register Account" button, copy and paste the URL below into your web browser: https://setup.tiphaus.com/auth/employee/register/457605?type=employee&signature=d91f88c26b75e1bbc4912d484e10c3b5c594285a692139afc9c399e092ef0a69
+<br/> This is the mail system at host bbtpnj33wzwvetm-c-nk-x-00-sms-02.vtext.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<3604026971@mvno179.sprintpcs.com>: unable to look up host
+    mvno179.sprintpcs.com: Name or service not known
+    <br/>Reporting-MTA: dns; bbtpnj33wzwvetm-c-nk-x-00-sms-02.vtext.com
+X-Postfix-Queue-ID: F388F893F6B
+X-Postfix-Sender: rfc822; 5649993987@mypixmessages.com
+Arrival-Date: Sun, 13 Aug 2023 03:30:20 +0000 (UTC)
+
+Final-Recipient: rfc822; 3604026971@mvno179.sprintpcs.com
+Original-Recipient: rfc822;3604026971@mvno179.sprintpcs.com
+Action: failed
+Status: 5.4.4
+Diagnostic-Code: X-Postfix; unable to look up host mvno179.sprintpcs.com: Name
+    or service not known
