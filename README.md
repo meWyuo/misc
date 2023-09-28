@@ -689,3 +689,582 @@ Diagnostic-Code: X-Postfix; unable to look up host mvno179.sprintpcs.com: Name
 	<string>https://olympic.instructure.com/files/43038946/download?download_frd=1&amp;verifier=PknPxdaZfXGn6N36Vav7whK6v5wP01kZIReM2mez</string>
 </dict>
 </plist>
+-------------------------------------
+Translated Report (Full Report Below)
+-------------------------------------
+
+Process:               Preview [18096]
+Path:                  /System/Applications/Preview.app/Contents/MacOS/Preview
+Identifier:            com.apple.Preview
+Version:               11.0 (1044.2)
+Build Info:            Preview-1044002000000000~113
+Code Type:             ARM-64 (Native)
+Parent Process:        launchd [1]
+User ID:               501
+
+Date/Time:             2023-09-27 17:07:42.8325 -0700
+OS Version:            macOS 13.5.2 (22G91)
+Report Version:        12
+Anonymous UUID:        D81AA594-C47C-5778-84F6-33E391A868DA
+
+Sleep/Wake UUID:       92597E9B-0D1E-455E-A60E-5F77D2387CDB
+
+Time Awake Since Boot: 260000 seconds
+Time Since Wake:       25918 seconds
+
+System Integrity Protection: enabled
+
+Crashed Thread:        1
+
+Exception Type:        EXC_BAD_ACCESS (SIGSEGV)
+Exception Codes:       KERN_INVALID_ADDRESS at 0x002008edfdd31d90 -> 0x000008edfdd31d90 (possible pointer authentication failure)
+Exception Codes:       0x0000000000000001, 0x002008edfdd31d90
+
+Termination Reason:    Namespace SIGNAL, Code 11 Segmentation fault: 11
+Terminating Process:   exc handler [18096]
+
+VM Region Info: 0x8edfdd31d90 is not in any region.  Bytes after previous region: 9337222405521  Bytes before following region: 95734857523824
+      REGION TYPE                    START - END         [ VSIZE] PRT/MAX SHRMOD  REGION DETAIL
+      commpage (reserved)        1000000000-7000000000   [384.0G] ---/--- SM=NUL  ...(unallocated)
+--->  GAP OF 0x5f9000000000 BYTES
+      MALLOC_NANO              600000000000-600008000000 [128.0M] rw-/rwx SM=PRV  
+
+Thread 0:
+0   libsystem_kernel.dylib        	       0x1865c3f54 0x1865c3000 + 3924
+1   libsystem_kernel.dylib        	       0x1865ccbb8 0x1865c3000 + 39864
+2   libsystem_kernel.dylib        	       0x1865c42d0 0x1865c3000 + 4816
+3   CoreFoundation                	       0x1866e27e4 0x186663000 + 522212
+4   CoreFoundation                	       0x1866e10c4 0x186663000 + 516292
+5   CoreFoundation                	       0x1866e04b8 0x186663000 + 513208
+6   AppKit                        	       0x189b7eed4 0x1898ce000 + 2821844
+7   AppKit                        	       0x18a19fca8 0x1898ce000 + 9247912
+8   AppKit                        	       0x189b7e468 0x1898ce000 + 2819176
+9   AppKit                        	       0x18a0e7f40 0x1898ce000 + 8494912
+10  AppKit                        	       0x18a0e8718 0x1898ce000 + 8496920
+11  AppKit                        	       0x18a25d130 0x1898ce000 + 10023216
+12  AppKit                        	       0x18a0e8978 0x1898ce000 + 8497528
+13  AppKit                        	       0x189b3f2d4 0x1898ce000 + 2560724
+14  AppKit                        	       0x189b3ef44 0x1898ce000 + 2559812
+15  AppKit                        	       0x18a2581d8 0x1898ce000 + 10002904
+16  AppKit                        	       0x18a391ef4 0x1898ce000 + 11288308
+17  AppKit                        	       0x189bedb08 0x1898ce000 + 3275528
+18  AppKit                        	       0x189bed95c 0x1898ce000 + 3275100
+19  AppKit                        	       0x18a391ca4 0x1898ce000 + 11287716
+20  AppKit                        	       0x189e09534 0x1898ce000 + 5485876
+21  AppKit                        	       0x189e0a744 0x1898ce000 + 5490500
+22  AppKit                        	       0x18a391b6c 0x1898ce000 + 11287404
+23  Preview                       	       0x102ea76a4 0x102de8000 + 784036
+24  Preview                       	       0x102e74338 0x102de8000 + 574264
+25  AppKit                        	       0x189aaf4cc 0x1898ce000 + 1971404
+26  AppKit                        	       0x189b7b498 0x1898ce000 + 2806936
+27  AppKit                        	       0x189b7b214 0x1898ce000 + 2806292
+28  AppKit                        	       0x189bb6ba0 0x1898ce000 + 3050400
+29  AppKit                        	       0x189bb6ac0 0x1898ce000 + 3050176
+30  AppKit                        	       0x189bb6914 0x1898ce000 + 3049748
+31  AppKit                        	       0x189b63828 0x1898ce000 + 2709544
+32  HIToolbox                     	       0x18ff0b3a4 0x18ff02000 + 37796
+33  HIToolbox                     	       0x18ff0a828 0x18ff02000 + 34856
+34  HIToolbox                     	       0x18ff20a40 0x18ff02000 + 125504
+35  HIToolbox                     	       0x18ff7e8e4 0x18ff02000 + 510180
+36  HIToolbox                     	       0x18ffa2564 0x18ff02000 + 656740
+37  HIToolbox                     	       0x18ffa24f4 0x18ff02000 + 656628
+38  HIToolbox                     	       0x18ffa2320 0x18ff02000 + 656160
+39  HIToolbox                     	       0x18ffa2ce0 0x18ff02000 + 658656
+40  HIToolbox                     	       0x18ffa2a00 0x18ff02000 + 657920
+41  AppKit                        	       0x189a59918 0x1898ce000 + 1620248
+42  AppKit                        	       0x189a5973c 0x1898ce000 + 1619772
+43  AppKit                        	       0x189907104 0x1898ce000 + 233732
+44  AppKit                        	       0x1898faf7c 0x1898ce000 + 184188
+45  AppKit                        	       0x1898d23cc 0x1898ce000 + 17356
+46  dyld                          	       0x1862abf28 0x1862a6000 + 24360
+
+Thread 1 Crashed:
+0   libobjc.A.dylib               	       0x186269c20 0x186260000 + 39968
+1   Preview                       	       0x102e2c540 0x102de8000 + 279872
+2   Preview                       	       0x102e24a8c 0x102de8000 + 248460
+3   Preview                       	       0x102e27478 0x102de8000 + 259192
+4   Preview                       	       0x102e3ec1c 0x102de8000 + 355356
+5   Preview                       	       0x102e3e084 0x102de8000 + 352388
+6   Foundation                    	       0x18763d244 0x1875fd000 + 262724
+7   Foundation                    	       0x18763d104 0x1875fd000 + 262404
+8   Foundation                    	       0x18763d094 0x1875fd000 + 262292
+9   Foundation                    	       0x18763c4ac 0x1875fd000 + 259244
+10  Foundation                    	       0x18763c1e0 0x1875fd000 + 258528
+11  Foundation                    	       0x18763c0d0 0x1875fd000 + 258256
+12  libdispatch.dylib             	       0x186463518 0x186450000 + 79128
+13  libdispatch.dylib             	       0x186454400 0x186450000 + 17408
+14  libdispatch.dylib             	       0x186457884 0x186450000 + 30852
+15  libdispatch.dylib             	       0x186456eec 0x186450000 + 28396
+16  libdispatch.dylib             	       0x186465e98 0x186450000 + 89752
+17  libdispatch.dylib             	       0x1864666c0 0x186450000 + 91840
+18  libsystem_pthread.dylib       	       0x186600038 0x1865fd000 + 12344
+19  libsystem_pthread.dylib       	       0x1865fed94 0x1865fd000 + 7572
+
+Thread 2:
+0   libsystem_pthread.dylib       	       0x1865fed8c 0x1865fd000 + 7564
+
+Thread 3:: com.apple.NSEventThread
+0   libsystem_kernel.dylib        	       0x1865c3f54 0x1865c3000 + 3924
+1   libsystem_kernel.dylib        	       0x1865ccbb8 0x1865c3000 + 39864
+2   libsystem_kernel.dylib        	       0x1865c42d0 0x1865c3000 + 4816
+3   CoreFoundation                	       0x1866e27e4 0x186663000 + 522212
+4   CoreFoundation                	       0x1866e10c4 0x186663000 + 516292
+5   CoreFoundation                	       0x1866e04b8 0x186663000 + 513208
+6   AppKit                        	       0x189a31f54 0x1898ce000 + 1458004
+7   libsystem_pthread.dylib       	       0x186603fa8 0x1865fd000 + 28584
+8   libsystem_pthread.dylib       	       0x1865feda0 0x1865fd000 + 7584
+
+Thread 4:
+0   Metal                         	       0x18fa5d8ec 0x18fa54000 + 39148
+1   CoreImage                     	       0x19059ed3c 0x190590000 + 60732
+2   CoreImage                     	       0x19059ecc0 0x190590000 + 60608
+3   CoreImage                     	       0x19059e9c0 0x190590000 + 59840
+4   CoreImage                     	       0x1905e0eec 0x190590000 + 331500
+5   CoreImage                     	       0x1905e0d8c 0x190590000 + 331148
+6   Preview                       	       0x102e9ef40 0x102de8000 + 749376
+7   Preview                       	       0x102e2c540 0x102de8000 + 279872
+8   Preview                       	       0x102e24a8c 0x102de8000 + 248460
+9   Preview                       	       0x102e27478 0x102de8000 + 259192
+10  Preview                       	       0x102e3ec1c 0x102de8000 + 355356
+11  Preview                       	       0x102e3e084 0x102de8000 + 352388
+12  Foundation                    	       0x18763d244 0x1875fd000 + 262724
+13  Foundation                    	       0x18763d104 0x1875fd000 + 262404
+14  Foundation                    	       0x18763d094 0x1875fd000 + 262292
+15  Foundation                    	       0x18763c4ac 0x1875fd000 + 259244
+16  Foundation                    	       0x18763c1e0 0x1875fd000 + 258528
+17  Foundation                    	       0x18763c0d0 0x1875fd000 + 258256
+18  libdispatch.dylib             	       0x186463518 0x186450000 + 79128
+19  libdispatch.dylib             	       0x186454400 0x186450000 + 17408
+20  libdispatch.dylib             	       0x186457884 0x186450000 + 30852
+21  libdispatch.dylib             	       0x186456eec 0x186450000 + 28396
+22  libdispatch.dylib             	       0x186465e98 0x186450000 + 89752
+23  libdispatch.dylib             	       0x1864666c0 0x186450000 + 91840
+24  libsystem_pthread.dylib       	       0x186600038 0x1865fd000 + 12344
+25  libsystem_pthread.dylib       	       0x1865fed94 0x1865fd000 + 7572
+
+Thread 5:
+0   libsystem_pthread.dylib       	       0x1865fed8c 0x1865fd000 + 7564
+
+Thread 6:
+0   libsystem_pthread.dylib       	       0x1865fed8c 0x1865fd000 + 7564
+
+Thread 7:
+0   libsystem_pthread.dylib       	       0x1865fed8c 0x1865fd000 + 7564
+
+Thread 8:
+0   libsystem_pthread.dylib       	       0x1865fed8c 0x1865fd000 + 7564
+
+Thread 9:
+0   libsystem_pthread.dylib       	       0x1865fed8c 0x1865fd000 + 7564
+
+Thread 10:
+0   libsystem_pthread.dylib       	       0x1865fed8c 0x1865fd000 + 7564
+
+Thread 11:
+0   libsystem_pthread.dylib       	       0x1865fed8c 0x1865fd000 + 7564
+
+
+Thread 1 crashed with ARM Thread State (64-bit):
+    x0: 0x0000600001081d80   x1: 0x00000001d609e264   x2: 0x0000600003404300   x3: 0x0000000000000008
+    x4: 0x000000000000000c   x5: 0x0000000000000000   x6: 0x0000000000000000   x7: 0x0000000000000000
+    x8: 0x0000000000000010   x9: 0x0000000000000008  x10: 0x6ae1600001081d80  x11: 0x00000000e3368ae8
+   x12: 0x0000000000000008  x13: 0x0000000000000000  x14: 0x000088edfdd31d80  x15: 0x002008edfdd31d80
+   x16: 0x002008edfdd31d80  x17: 0x0000000102fcd150  x18: 0x0000000000000000  x19: 0x0000000000000008
+   x20: 0x0000000000000008  x21: 0x0000600001081d80  x22: 0x0000000000000008  x23: 0x0000600001081d80
+   x24: 0x0000600003404300  x25: 0xffffffffffffffff  x26: 0x00000001e2653be0  x27: 0x0000000000000001
+   x28: 0x0000000146f21310   fp: 0x000000016d09e940   lr: 0x0000000102e9ed84
+    sp: 0x000000016d09e890   pc: 0x0000000186269c20 cpsr: 0x20001000
+   far: 0x002008edfdd31d90  esr: 0x92000004 (Data Abort) byte read Translation fault
+
+Binary Images:
+       0x102de8000 -        0x102fcbfff com.apple.Preview (11.0) <259db977-395b-3927-b85e-fc86558868e9> /System/Applications/Preview.app/Contents/MacOS/Preview
+       0x105d94000 -        0x107247fff Hydra (1.1.9) <decec877-7e39-3b35-8924-ee6541d1ab6b> /System/Library/PrivateFrameworks/Hydra.framework/Versions/C/Hydra
+       0x10335c000 -        0x103467fff libAlembic.1.7.10.dylib (*) <d9c48df5-cd9b-3e62-b913-4ed7be0a4dbe> /System/Library/PrivateFrameworks/Hydra.framework/Versions/C/Libraries/libAlembic.1.7.10.dylib
+       0x105d70000 -        0x105d77fff com.apple.CloudDocsFileProvider (1.0) <d26653d7-1d6c-3050-8aa2-396c6a9c3e0f> /System/Library/Frameworks/FileProvider.framework/OverrideBundles/CloudDocsFileProvider.bundle/Contents/MacOS/CloudDocsFileProvider
+       0x110a58000 -        0x110a5ffff com.apple.FileProviderOverride (855.140.6) <e2c50aa6-091b-38f3-8180-aad8381e3887> /System/Library/Frameworks/FileProvider.framework/OverrideBundles/FileProviderOverride.bundle/Contents/MacOS/FileProviderOverride
+       0x110af8000 -        0x110b17fff com.apple.findersync.fileprovideroverride.FinderSyncCollaborationFileProviderOverride (13.5) <3eeb03ea-b41e-3526-baf4-bb8c1dde7973> /System/Library/Frameworks/FileProvider.framework/OverrideBundles/FinderSyncCollaborationFileProviderOverride.bundle/Contents/MacOS/FinderSyncCollaborationFileProviderOverride
+       0x105ba8000 -        0x105bb3fff libobjc-trampolines.dylib (*) <8e928412-9e96-32d4-b173-d99beb9fed0b> /usr/lib/libobjc-trampolines.dylib
+       0x1865c3000 -        0x1865fcff7 libsystem_kernel.dylib (*) <08c5fe2a-b0bf-3ab6-bb42-460c18917d33> /usr/lib/system/libsystem_kernel.dylib
+       0x186663000 -        0x186b3cfff com.apple.CoreFoundation (6.9) <b3b2df49-2db8-370e-84ae-e0a2704515b8> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+       0x1898ce000 -        0x18a7ddfff com.apple.AppKit (6.9) <55f7d958-6ed1-3c36-a70e-94d7ffc18d5a> /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+       0x18ff02000 -        0x190235fff com.apple.HIToolbox (2.1.1) <9bed5c79-f02f-3e0b-9fdb-57d955cc68ba> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+       0x1862a6000 -        0x186334587 dyld (*) <e7a99595-e0f8-34af-be8b-9347d0d658a4> /usr/lib/dyld
+       0x186260000 -        0x1862a5f3f libobjc.A.dylib (*) <ac12887c-d698-3627-b9d1-d2e5055a5da4> /usr/lib/libobjc.A.dylib
+       0x1875fd000 -        0x187fc2fff com.apple.Foundation (6.9) <b7799cb6-0a3c-3c8b-a185-8cec55845b14> /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+       0x186450000 -        0x186497fff libdispatch.dylib (*) <9897030f-75d3-374b-8787-322d3d72e096> /usr/lib/system/libdispatch.dylib
+       0x1865fd000 -        0x186609fff libsystem_pthread.dylib (*) <1f30fb9a-bdf9-32db-a709-8417666a7e45> /usr/lib/system/libsystem_pthread.dylib
+       0x18fa54000 -        0x18fc3cfff com.apple.Metal (306.7.5) <606ffde9-0faf-3a2f-9f25-1a60b1f1e93d> /System/Library/Frameworks/Metal.framework/Versions/A/Metal
+       0x190590000 -        0x1908edfff com.apple.CoreImage (17.0.0) <3e563051-4c2b-3741-b0f7-e1be5058c5ad> /System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage
+               0x0 - 0xffffffffffffffff ??? (*) <00000000-0000-0000-0000-000000000000> ???
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=1.5G resident=0K(0%) swapped_out_or_unallocated=1.5G(100%)
+Writable regions: Total=1.6G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=1.6G(100%)
+
+                                VIRTUAL   REGION 
+REGION TYPE                        SIZE    COUNT (non-coalesced) 
+===========                     =======  ======= 
+Accelerate framework               384K        3 
+Activity Tracing                   256K        1 
+CG backing stores                 2560K        4 
+CG image                          3584K       32 
+CG raster data                    3152K        1 
+ColorSync                          576K       29 
+CoreAnimation                     12.9M       57 
+CoreGraphics                        32K        2 
+CoreGraphics (reserved)             16K        1         reserved VM address space (unallocated)
+CoreImage                           16K        1 
+CoreUI image data                 2512K       20 
+Foundation                          16K        1 
+Image IO                          25.6M        4 
+Kernel Alloc Once                   32K        1 
+MALLOC                           281.3M       81 
+MALLOC guard page                  192K       10 
+MALLOC_MEDIUM (reserved)         960.0M        8         reserved VM address space (unallocated)
+MALLOC_NANO (reserved)           384.0M        1         reserved VM address space (unallocated)
+STACK GUARD                       56.2M       12 
+Stack                             13.8M       12 
+VM_ALLOCATE                        272K       16 
+__AUTH                            2635K      431 
+__AUTH_CONST                      32.4M      666 
+__CTF                               824        1 
+__DATA                            17.7M      658 
+__DATA_CONST                      33.2M      674 
+__DATA_DIRTY                      2134K      249 
+__FONT_DATA                        2352        1 
+__INFO_FILTER                         8        1 
+__LINKEDIT                       803.5M        8 
+__OBJC_RO                         66.4M        1 
+__OBJC_RW                         2012K        1 
+__TEXT                           730.5M      695 
+dyld private memory                272K        1 
+mapped file                      367.1M      100 
+shared memory                      896K       15 
+===========                     =======  ======= 
+TOTAL                              3.7G     3799 
+TOTAL, minus reserved VM space     2.4G     3799 
+
+
+
+-----------
+Full Report
+-----------
+
+{"app_name":"Preview","timestamp":"2023-09-27 17:07:55.00 -0700","app_version":"11.0","slice_uuid":"259db977-395b-3927-b85e-fc86558868e9","build_version":"1044.2","platform":1,"bundleID":"com.apple.Preview","share_with_app_devs":1,"is_first_party":1,"bug_type":"309","os_version":"macOS 13.5.2 (22G91)","roots_installed":0,"name":"Preview","incident_id":"646D5874-3A98-4494-84C6-018E3366E963"}
+{
+  "uptime" : 260000,
+  "procRole" : "Foreground",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "MacBookAir10,1",
+  "coalitionID" : 1556,
+  "osVersion" : {
+    "train" : "macOS 13.5.2",
+    "build" : "22G91",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2023-09-27 17:07:42.8325 -0700",
+  "incident" : "646D5874-3A98-4494-84C6-018E3366E963",
+  "pid" : 18096,
+  "translated" : false,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "procLaunch" : "2023-09-27 17:07:26.3700 -0700",
+  "procStartAbsTime" : 6400726974171,
+  "procExitAbsTime" : 6401120229681,
+  "procName" : "Preview",
+  "procPath" : "\/System\/Applications\/Preview.app\/Contents\/MacOS\/Preview",
+  "bundleInfo" : {"CFBundleShortVersionString":"11.0","CFBundleVersion":"1044.2","CFBundleIdentifier":"com.apple.Preview"},
+  "buildInfo" : {"ProjectName":"Preview","SourceVersion":"1044002000000000","BuildVersion":"113"},
+  "storeInfo" : {"deviceIdentifierForVendor":"F4A92173-C655-5D95-8157-D719810D0BE1"},
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "com.apple.Preview",
+  "crashReporterKey" : "D81AA594-C47C-5778-84F6-33E391A868DA",
+  "codeSigningID" : "com.apple.Preview",
+  "codeSigningTeamID" : "",
+  "codeSigningFlags" : 570522385,
+  "codeSigningValidationCategory" : 1,
+  "codeSigningTrustLevel" : 0,
+  "wakeTime" : 25918,
+  "sleepWakeUUID" : "92597E9B-0D1E-455E-A60E-5F77D2387CDB",
+  "sip" : "enabled",
+  "vmRegionInfo" : "0x8edfdd31d90 is not in any region.  Bytes after previous region: 9337222405521  Bytes before following region: 95734857523824\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      commpage (reserved)        1000000000-7000000000   [384.0G] ---\/--- SM=NUL  ...(unallocated)\n--->  GAP OF 0x5f9000000000 BYTES\n      MALLOC_NANO              600000000000-600008000000 [128.0M] rw-\/rwx SM=PRV  ",
+  "exception" : {"codes":"0x0000000000000001, 0x002008edfdd31d90","rawCodes":[1,9017017513483664],"type":"EXC_BAD_ACCESS","signal":"SIGSEGV","subtype":"KERN_INVALID_ADDRESS at 0x002008edfdd31d90 -> 0x000008edfdd31d90 (possible pointer authentication failure)"},
+  "termination" : {"flags":0,"code":11,"namespace":"SIGNAL","indicator":"Segmentation fault: 11","byProc":"exc handler","byPid":18096},
+  "vmregioninfo" : "0x8edfdd31d90 is not in any region.  Bytes after previous region: 9337222405521  Bytes before following region: 95734857523824\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      commpage (reserved)        1000000000-7000000000   [384.0G] ---\/--- SM=NUL  ...(unallocated)\n--->  GAP OF 0x5f9000000000 BYTES\n      MALLOC_NANO              600000000000-600008000000 [128.0M] rw-\/rwx SM=PRV  ",
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 1,
+  "threads" : [{"id":2074561,"frames":[{"imageOffset":3924,"imageIndex":7},{"imageOffset":39864,"imageIndex":7},{"imageOffset":4816,"imageIndex":7},{"imageOffset":522212,"imageIndex":8},{"imageOffset":516292,"imageIndex":8},{"imageOffset":513208,"imageIndex":8},{"imageOffset":2821844,"imageIndex":9},{"imageOffset":9247912,"imageIndex":9},{"imageOffset":2819176,"imageIndex":9},{"imageOffset":8494912,"imageIndex":9},{"imageOffset":8496920,"imageIndex":9},{"imageOffset":10023216,"imageIndex":9},{"imageOffset":8497528,"imageIndex":9},{"imageOffset":2560724,"imageIndex":9},{"imageOffset":2559812,"imageIndex":9},{"imageOffset":10002904,"imageIndex":9},{"imageOffset":11288308,"imageIndex":9},{"imageOffset":3275528,"imageIndex":9},{"imageOffset":3275100,"imageIndex":9},{"imageOffset":11287716,"imageIndex":9},{"imageOffset":5485876,"imageIndex":9},{"imageOffset":5490500,"imageIndex":9},{"imageOffset":11287404,"imageIndex":9},{"imageOffset":784036,"imageIndex":0},{"imageOffset":574264,"imageIndex":0},{"imageOffset":1971404,"imageIndex":9},{"imageOffset":2806936,"imageIndex":9},{"imageOffset":2806292,"imageIndex":9},{"imageOffset":3050400,"imageIndex":9},{"imageOffset":3050176,"imageIndex":9},{"imageOffset":3049748,"imageIndex":9},{"imageOffset":2709544,"imageIndex":9},{"imageOffset":37796,"imageIndex":10},{"imageOffset":34856,"imageIndex":10},{"imageOffset":125504,"imageIndex":10},{"imageOffset":510180,"imageIndex":10},{"imageOffset":656740,"imageIndex":10},{"imageOffset":656628,"imageIndex":10},{"imageOffset":656160,"imageIndex":10},{"imageOffset":658656,"imageIndex":10},{"imageOffset":657920,"imageIndex":10},{"imageOffset":1620248,"imageIndex":9},{"imageOffset":1619772,"imageIndex":9},{"imageOffset":233732,"imageIndex":9},{"imageOffset":184188,"imageIndex":9},{"imageOffset":17356,"imageIndex":9},{"imageOffset":24360,"imageIndex":11}]},{"triggered":true,"id":2074593,"threadState":{"x":[{"value":105553133575552},{"value":7885939300,"objc-selector":"extent"},{"value":105553170809600},{"value":8},{"value":12},{"value":0},{"value":0},{"value":0},{"value":16},{"value":8},{"value":7701542390913834368},{"value":3812002536},{"value":8},{"value":0},{"value":150555747097984},{"value":9017017513483648},{"value":9017017513483648},{"value":4345090384},{"value":0},{"value":8},{"value":8},{"value":105553133575552},{"value":8},{"value":105553133575552},{"value":105553170809600},{"value":18446744073709551615},{"value":8093252576},{"value":1},{"value":5485237008}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4343852420},"cpsr":{"value":536875008},"fp":{"value":6124333376},"sp":{"value":6124333200},"esr":{"value":2449473540,"description":"(Data Abort) byte read Translation fault"},"pc":{"value":6545644576,"matchesCrashFrame":1},"far":{"value":9017017513483664}},"frames":[{"imageOffset":39968,"imageIndex":12},{"imageOffset":279872,"imageIndex":0},{"imageOffset":248460,"imageIndex":0},{"imageOffset":259192,"imageIndex":0},{"imageOffset":355356,"imageIndex":0},{"imageOffset":352388,"imageIndex":0},{"imageOffset":262724,"imageIndex":13},{"imageOffset":262404,"imageIndex":13},{"imageOffset":262292,"imageIndex":13},{"imageOffset":259244,"imageIndex":13},{"imageOffset":258528,"imageIndex":13},{"imageOffset":258256,"imageIndex":13},{"imageOffset":79128,"imageIndex":14},{"imageOffset":17408,"imageIndex":14},{"imageOffset":30852,"imageIndex":14},{"imageOffset":28396,"imageIndex":14},{"imageOffset":89752,"imageIndex":14},{"imageOffset":91840,"imageIndex":14},{"imageOffset":12344,"imageIndex":15},{"imageOffset":7572,"imageIndex":15}]},{"id":2074601,"frames":[{"imageOffset":7564,"imageIndex":15}]},{"id":2074618,"name":"com.apple.NSEventThread","frames":[{"imageOffset":3924,"imageIndex":7},{"imageOffset":39864,"imageIndex":7},{"imageOffset":4816,"imageIndex":7},{"imageOffset":522212,"imageIndex":8},{"imageOffset":516292,"imageIndex":8},{"imageOffset":513208,"imageIndex":8},{"imageOffset":1458004,"imageIndex":9},{"imageOffset":28584,"imageIndex":15},{"imageOffset":7584,"imageIndex":15}]},{"id":2074792,"frames":[{"imageOffset":39148,"imageIndex":16},{"imageOffset":60732,"imageIndex":17},{"imageOffset":60608,"imageIndex":17},{"imageOffset":59840,"imageIndex":17},{"imageOffset":331500,"imageIndex":17},{"imageOffset":331148,"imageIndex":17},{"imageOffset":749376,"imageIndex":0},{"imageOffset":279872,"imageIndex":0},{"imageOffset":248460,"imageIndex":0},{"imageOffset":259192,"imageIndex":0},{"imageOffset":355356,"imageIndex":0},{"imageOffset":352388,"imageIndex":0},{"imageOffset":262724,"imageIndex":13},{"imageOffset":262404,"imageIndex":13},{"imageOffset":262292,"imageIndex":13},{"imageOffset":259244,"imageIndex":13},{"imageOffset":258528,"imageIndex":13},{"imageOffset":258256,"imageIndex":13},{"imageOffset":79128,"imageIndex":14},{"imageOffset":17408,"imageIndex":14},{"imageOffset":30852,"imageIndex":14},{"imageOffset":28396,"imageIndex":14},{"imageOffset":89752,"imageIndex":14},{"imageOffset":91840,"imageIndex":14},{"imageOffset":12344,"imageIndex":15},{"imageOffset":7572,"imageIndex":15}]},{"id":2074793,"frames":[{"imageOffset":7564,"imageIndex":15}]},{"id":2074797,"frames":[{"imageOffset":7564,"imageIndex":15}]},{"id":2074843,"frames":[{"imageOffset":7564,"imageIndex":15}]},{"id":2074844,"frames":[{"imageOffset":7564,"imageIndex":15}]},{"id":2074845,"frames":[{"imageOffset":7564,"imageIndex":15}]},{"id":2074847,"frames":[{"imageOffset":7564,"imageIndex":15}]},{"id":2074849,"frames":[{"imageOffset":7564,"imageIndex":15}]}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4343103488,
+    "CFBundleShortVersionString" : "11.0",
+    "CFBundleIdentifier" : "com.apple.Preview",
+    "size" : 1982464,
+    "uuid" : "259db977-395b-3927-b85e-fc86558868e9",
+    "path" : "\/System\/Applications\/Preview.app\/Contents\/MacOS\/Preview",
+    "name" : "Preview",
+    "CFBundleVersion" : "1044.2"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4393091072,
+    "CFBundleShortVersionString" : "1.1.9",
+    "size" : 21708800,
+    "uuid" : "decec877-7e39-3b35-8924-ee6541d1ab6b",
+    "path" : "\/System\/Library\/PrivateFrameworks\/Hydra.framework\/Versions\/C\/Hydra",
+    "name" : "Hydra",
+    "CFBundleVersion" : "1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4348821504,
+    "size" : 1097728,
+    "uuid" : "d9c48df5-cd9b-3e62-b913-4ed7be0a4dbe",
+    "path" : "\/System\/Library\/PrivateFrameworks\/Hydra.framework\/Versions\/C\/Libraries\/libAlembic.1.7.10.dylib",
+    "name" : "libAlembic.1.7.10.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4392943616,
+    "CFBundleShortVersionString" : "1.0",
+    "CFBundleIdentifier" : "com.apple.CloudDocsFileProvider",
+    "size" : 32768,
+    "uuid" : "d26653d7-1d6c-3050-8aa2-396c6a9c3e0f",
+    "path" : "\/System\/Library\/Frameworks\/FileProvider.framework\/OverrideBundles\/CloudDocsFileProvider.bundle\/Contents\/MacOS\/CloudDocsFileProvider",
+    "name" : "CloudDocsFileProvider",
+    "CFBundleVersion" : "1553.141.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4574248960,
+    "CFBundleShortVersionString" : "855.140.6",
+    "CFBundleIdentifier" : "com.apple.FileProviderOverride",
+    "size" : 32768,
+    "uuid" : "e2c50aa6-091b-38f3-8180-aad8381e3887",
+    "path" : "\/System\/Library\/Frameworks\/FileProvider.framework\/OverrideBundles\/FileProviderOverride.bundle\/Contents\/MacOS\/FileProviderOverride",
+    "name" : "FileProviderOverride",
+    "CFBundleVersion" : "855.140.6"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4574904320,
+    "CFBundleShortVersionString" : "13.5",
+    "CFBundleIdentifier" : "com.apple.findersync.fileprovideroverride.FinderSyncCollaborationFileProviderOverride",
+    "size" : 131072,
+    "uuid" : "3eeb03ea-b41e-3526-baf4-bb8c1dde7973",
+    "path" : "\/System\/Library\/Frameworks\/FileProvider.framework\/OverrideBundles\/FinderSyncCollaborationFileProviderOverride.bundle\/Contents\/MacOS\/FinderSyncCollaborationFileProviderOverride",
+    "name" : "FinderSyncCollaborationFileProviderOverride",
+    "CFBundleVersion" : "1564.7.1"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4391075840,
+    "size" : 49152,
+    "uuid" : "8e928412-9e96-32d4-b173-d99beb9fed0b",
+    "path" : "\/usr\/lib\/libobjc-trampolines.dylib",
+    "name" : "libobjc-trampolines.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6549155840,
+    "size" : 237560,
+    "uuid" : "08c5fe2a-b0bf-3ab6-bb42-460c18917d33",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6549811200,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.CoreFoundation",
+    "size" : 5087232,
+    "uuid" : "b3b2df49-2db8-370e-84ae-e0a2704515b8",
+    "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/Versions\/A\/CoreFoundation",
+    "name" : "CoreFoundation",
+    "CFBundleVersion" : "1979"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6602678272,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.AppKit",
+    "size" : 15794176,
+    "uuid" : "55f7d958-6ed1-3c36-a70e-94d7ffc18d5a",
+    "path" : "\/System\/Library\/Frameworks\/AppKit.framework\/Versions\/C\/AppKit",
+    "name" : "AppKit",
+    "CFBundleVersion" : "2299.70.136"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6709846016,
+    "CFBundleShortVersionString" : "2.1.1",
+    "CFBundleIdentifier" : "com.apple.HIToolbox",
+    "size" : 3358720,
+    "uuid" : "9bed5c79-f02f-3e0b-9fdb-57d955cc68ba",
+    "path" : "\/System\/Library\/Frameworks\/Carbon.framework\/Versions\/A\/Frameworks\/HIToolbox.framework\/Versions\/A\/HIToolbox",
+    "name" : "HIToolbox"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6545891328,
+    "size" : 583048,
+    "uuid" : "e7a99595-e0f8-34af-be8b-9347d0d658a4",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6545604608,
+    "size" : 286528,
+    "uuid" : "ac12887c-d698-3627-b9d1-d2e5055a5da4",
+    "path" : "\/usr\/lib\/libobjc.A.dylib",
+    "name" : "libobjc.A.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6566170624,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.Foundation",
+    "size" : 10248192,
+    "uuid" : "b7799cb6-0a3c-3c8b-a185-8cec55845b14",
+    "path" : "\/System\/Library\/Frameworks\/Foundation.framework\/Versions\/C\/Foundation",
+    "name" : "Foundation",
+    "CFBundleVersion" : "1979"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6547636224,
+    "size" : 294912,
+    "uuid" : "9897030f-75d3-374b-8787-322d3d72e096",
+    "path" : "\/usr\/lib\/system\/libdispatch.dylib",
+    "name" : "libdispatch.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6549393408,
+    "size" : 53248,
+    "uuid" : "1f30fb9a-bdf9-32db-a709-8417666a7e45",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6704939008,
+    "CFBundleShortVersionString" : "306.7.5",
+    "CFBundleIdentifier" : "com.apple.Metal",
+    "size" : 2002944,
+    "uuid" : "606ffde9-0faf-3a2f-9f25-1a60b1f1e93d",
+    "path" : "\/System\/Library\/Frameworks\/Metal.framework\/Versions\/A\/Metal",
+    "name" : "Metal",
+    "CFBundleVersion" : "306.7.5"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6716719104,
+    "CFBundleShortVersionString" : "17.0.0",
+    "CFBundleIdentifier" : "com.apple.CoreImage",
+    "size" : 3530752,
+    "uuid" : "3e563051-4c2b-3741-b0f7-e1be5058c5ad",
+    "path" : "\/System\/Library\/Frameworks\/CoreImage.framework\/Versions\/A\/CoreImage",
+    "name" : "CoreImage",
+    "CFBundleVersion" : "1340.9"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  }
+],
+  "sharedCache" : {
+  "base" : 6545227776,
+  "size" : 3553361920,
+  "uuid" : "40eab1ab-8b22-3dec-aa46-bb3136a05069"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=1.5G resident=0K(0%) swapped_out_or_unallocated=1.5G(100%)\nWritable regions: Total=1.6G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=1.6G(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nAccelerate framework               384K        3 \nActivity Tracing                   256K        1 \nCG backing stores                 2560K        4 \nCG image                          3584K       32 \nCG raster data                    3152K        1 \nColorSync                          576K       29 \nCoreAnimation                     12.9M       57 \nCoreGraphics                        32K        2 \nCoreGraphics (reserved)             16K        1         reserved VM address space (unallocated)\nCoreImage                           16K        1 \nCoreUI image data                 2512K       20 \nFoundation                          16K        1 \nImage IO                          25.6M        4 \nKernel Alloc Once                   32K        1 \nMALLOC                           281.3M       81 \nMALLOC guard page                  192K       10 \nMALLOC_MEDIUM (reserved)         960.0M        8         reserved VM address space (unallocated)\nMALLOC_NANO (reserved)           384.0M        1         reserved VM address space (unallocated)\nSTACK GUARD                       56.2M       12 \nStack                             13.8M       12 \nVM_ALLOCATE                        272K       16 \n__AUTH                            2635K      431 \n__AUTH_CONST                      32.4M      666 \n__CTF                               824        1 \n__DATA                            17.7M      658 \n__DATA_CONST                      33.2M      674 \n__DATA_DIRTY                      2134K      249 \n__FONT_DATA                        2352        1 \n__INFO_FILTER                         8        1 \n__LINKEDIT                       803.5M        8 \n__OBJC_RO                         66.4M        1 \n__OBJC_RW                         2012K        1 \n__TEXT                           730.5M      695 \ndyld private memory                272K        1 \nmapped file                      367.1M      100 \nshared memory                      896K       15 \n===========                     =======  ======= \nTOTAL                              3.7G     3799 \nTOTAL, minus reserved VM space     2.4G     3799 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+
+  }
+},
+  "logWritingSignature" : "b1dfd5655525d0dd6b0c13af185f54b76395526f",
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "60da5e84ab0ca017dace9abf",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000008
+    },
+    {
+      "rolloutId" : "6297d96be2c9387df974efa4",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000014
+    }
+  ],
+  "experiments" : [
+    {
+      "treatmentId" : "3a3cf641-8471-4e4e-9ad4-81d0ede970fd",
+      "experimentId" : "64a84dae90d82611a0bd7d3d",
+      "deploymentId" : 400000010
+    },
+    {
+      "treatmentId" : "6dd670af-0633-45e4-ae5f-122ae4df02be",
+      "experimentId" : "64406ba83deb637ac8a04419",
+      "deploymentId" : 900000017
+    }
+  ]
+}
+}
+
+Model: MacBookAir10,1, BootROM 8422.141.2, proc 8:4:4 processors, 8 GB, SMC 
+Graphics: Apple M1, Apple M1, Built-In
+Display: Color LCD, 2560 x 1600 Retina, Main, MirrorOff, Online
+Memory Module: LPDDR4, Micron
+AirPort: spairport_wireless_card_type_wifi (0x14E4, 0x4378), wl0: May 13 2023 07:20:48 version 18.20.383.15.7.8.150 FWID 01-b37727a5
+Bluetooth: Version (null), 0 services, 0 devices, 0 incoming serial ports
+Network Service: Wi-Fi, AirPort, en0
+USB Device: USB31Bus
+USB Device: USB31Bus
+Thunderbolt Bus: MacBook Air, Apple Inc.
+Thunderbolt Bus: MacBook Air, Apple Inc.
