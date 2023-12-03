@@ -1,3 +1,4 @@
+[[File:Information orange.svg|25px|alt=Information icon]] Please refrain from making unconstructive edits to Wikipedia, as you did at [[:Helicobacter pylori]]. Your edits appear to constitute [[Wikipedia:Vandalism|vandalism]] and have been [[Help:Reverting|reverted]]. If you would like to experiment, please use the [[Wikipedia:Sandbox|sandbox]]. Repeated vandalism may result in the [[Wikipedia:Blocking policy|loss of editing privileges]]. Thank you.<!-- Template:uw-vandalism2 --> [[User:The Herald|The Herald (Benison)]] ([[User talk:The Herald|talk]]) 10:49, 3 December 2023 (UTC)
 <br/>https://camo.githubusercontent.com/902dd3789b0fbdfcca0f3eef4bc3a6fe38d8f8302fb489ab05fa46f5995750b0/68747470733a2f2f6f626a656374732d75732d656173742d312e647265616d2e696f2f69656866657268676675697a7268657567687274756867657a68677272657a676875696f682f436f6f6b7761726530312e706e67
 <br/>🙏
 <br/>✞
