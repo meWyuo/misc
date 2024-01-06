@@ -1286,3 +1286,9 @@ Thunderbolt Bus: MacBook Air, Apple Inc.
                    <br>
                </div><img src="http://warcoas.com/erse/foraminifera/4331057792/erse/gulling/execute/1696463126/endocyst" width="1" height="1"/>
 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fotis.p.w%2Fposts%2Fpfbid0Ty1i51Q2JHs1eTLY2td8N5q6vweAGweoN37YtfbuUxPwLW7kxKP5AuATVSbCf8Snl&show_text=true&width=500" width="500" height="202" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<br/>heatmaps_g2g_100941895, __zlcmid, _gat, _ga, _gid, _ceg.u, __utmc, __utmt_b, __utmz, __utma, _jsuid, __utmt_c, __utmb, _ceg.s, __utmt, __utmv
+<br/>
+_first_pageview, __atrfs, __atuvs, __atuvc
+<br/>
+p, _gat_gtag_UA_195578_35
+<br/>
